@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Standard"
+        android:id="@+id/modeStandard"/>
+    <item
+        android:title="Scientifique"
+        android:id="@+id/modeScientifique"/>
+    <item
+        android:title="Programmeur"
+        android:id="@+id/modeProgrammeur"/>
+    <item
+        android:title="Calcul de la date"
+        android:id="@+id/modeCalculDate"/>
+</menu>

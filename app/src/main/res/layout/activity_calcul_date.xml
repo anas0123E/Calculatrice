@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculDate"
+    android:orientation="vertical"
+    android:background="@color/grisOmbre">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="23dp"
+        android:text="Différence entre les dates" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:textColor="@color/white"
+            android:padding="25dp"
+            android:textSize="15dp"
+            android:text="De :" />
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbarSize="@dimen/pad"
+            android:id="@+id/DateDépart"
+            android:paddingLeft="30dp"
+            android:backgroundTintMode="multiply"
+            android:startYear="2022"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:textColor="@color/white"
+            android:gravity="start|center"
+            android:padding="25dp"
+            android:textSize="15dp"
+            android:text="À :" />
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/DateArivée"
+            android:paddingLeft="30dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_weight="0.09"
+            android:background="@color/vert"
+            android:onClick="egale"
+            android:text="="
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:text=""
+            android:id="@+id/resultat1"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
